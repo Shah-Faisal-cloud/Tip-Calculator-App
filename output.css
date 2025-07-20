@@ -595,6 +595,7 @@ video {
 @media (min-width: 1280px) {
   .main {
     min-height: 30vh;
+    max-width: 65vw;
   }
 }
 
@@ -1052,6 +1053,10 @@ video {
 
   .xl\:min-h-\[30vh\] {
     min-height: 30vh;
+  }
+
+  .xl\:max-w-\[65vw\] {
+    max-width: 65vw;
   }
 
   .xl\:grid-cols-3 {

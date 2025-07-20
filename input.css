@@ -18,7 +18,7 @@
 
   @layer components {
     .main{
-      @apply flex flex-col lg:flex-row justify-between gap-y-10 lg:gap-x-6 bg-white min-w-[350px] sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[85vw]  min-h-[75vh] lg:min-h-[40vh] xl:min-h-[30vh] px-6 py-8 rounded-2xl
+      @apply flex flex-col lg:flex-row justify-between gap-y-10 lg:gap-x-6 bg-white min-w-[350px] sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[85vw] xl:max-w-[65vw]  min-h-[75vh] lg:min-h-[40vh] xl:min-h-[30vh] px-6 py-8 rounded-2xl
     }
     
   .fancy-input {
