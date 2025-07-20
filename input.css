@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-spinner {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+}
+
+  @layer components {
+    .main{
+      @apply flex flex-col lg:flex-row justify-between gap-y-10 lg:gap-x-6 bg-white min-w-[350px] sm:max-w-[70vw] md:max-w-[60vw] lg:max-w-[85vw]  min-h-[75vh] lg:min-h-[40vh] xl:min-h-[30vh] px-6 py-8 rounded-2xl
+    }
+    
+  .fancy-input {
+    @apply bg-gray-50 focus:outline-green-400 w-full px-3 py-1.5 text-right no-spinner leading-none text-2xl rounded-lg;
+  }
+
+  .input-wrapper {
+    @apply flex flex-col gap-y-2;
+  }
+
+  .input-icon {
+    @apply absolute -translate-y-1/2 pointer-events-none left-4 top-1/2;
+  }
+
+  .button {
+    @apply px-8 py-2 text-2xl text-white transition-colors duration-200 ease-linear bg-green-900 rounded-md hover:bg-green-400 ;
+  }
+
+  .error {
+    @apply outline outline-red-700 outline-2 focus:outline-red-700;
+  }
+
+}
+
